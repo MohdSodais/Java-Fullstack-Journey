@@ -47,7 +47,18 @@ public class Day13 {
         }
         System.out.printf("Highest Expense: $%.2f on Day %d\n", maxExpense, maxDay);
 
-        // 5. Count days over a specific budget (e.g., $50)
+        // 5. Find Lowest Expense (Min)
+        double minExpense = expenses[0];
+        int minDay = 1;
+        for (int i = 1; i < expenses.length; i++) {
+            if (expenses[i] < minExpense) {
+                minExpense = expenses[i];
+                minDay = i + 1;
+            }
+        }
+        System.out.printf("Lowest Expense: $%.2f on Day %d\n", minExpense, minDay);
+
+        // 6. Count days over a specific budget (e.g., $50)
         double budgetThreshold = 50.0;
         int overBudgetCount = 0;
         for (double exp : expenses) {
