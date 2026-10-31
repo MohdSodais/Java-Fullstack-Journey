@@ -95,7 +95,7 @@ public class Day16 {
             } else {
                 System.out.println("❌ Invalid option. Please choose between 1 and 5.");
             }
-        }
+         }
 
         scanner.close();
     }
