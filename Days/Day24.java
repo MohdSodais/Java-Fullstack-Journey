@@ -3,7 +3,7 @@ package Days;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Day241 {
+public class Day24 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
