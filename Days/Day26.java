@@ -34,7 +34,7 @@ public class Day26 {
             for (int i = 0; i < size; i++) {
                 for (int j = 0; j < size; j++) {
                     if (i == playerRow && j == playerCol) {
-                        System.out.print(" 🧭 "); // Player marker
+                        System.out.print(" @ "); // Player marker
                     } else {
                         System.out.print(" ~  "); // Unexplored map fog
                     }
@@ -47,11 +47,11 @@ public class Day26 {
             // Proximity hint system (Manhattan distance)
             int distance = Math.abs(playerRow - treasureRow) + Math.abs(playerCol - treasureCol);
             if (distance <= 1) {
-                System.out.println("🔥 HOT! You smell gold nearby!");
+                System.out.println(" HOT! You smell gold nearby!");
             } else if (distance <= 2) {
-                System.out.println("🌡️ Warm. Getting closer...");
+                System.out.println(" Warm. Getting closer...");
             } else {
-                System.out.println("❄️ Cold. Keep searching.");
+                System.out.println(" Cold. Keep searching.");
             }
 
             // Get player movement input
