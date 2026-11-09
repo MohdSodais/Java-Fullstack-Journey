@@ -66,7 +66,7 @@ public class Day26 {
             else if (move == 'A') newCol--;  // Move Left
             else if (move == 'D') newCol++;  // Move Right
             else {
-                System.out.println("❌ Invalid command! Use W, A, S, or D.");
+                System.out.println(" Invalid command! Use W, A, S, or D.");
                 continue;
             }
 
@@ -81,11 +81,11 @@ public class Day26 {
                     foundTreasure = true;
                 }
             } else {
-                System.out.println("⚠️ Ouch! You hit the edge of the map. Try another direction.");
+                System.out.println("Ouch! You hit the edge of the map. Try another direction.");
             }
         }
 
-        System.out.println("\n🎉 CONGRATULATIONS! You found the treasure in " + steps + " steps!");
+        System.out.println("\nCONGRATULATIONS! You found the treasure in " + steps + " steps!");
         scanner.close();
     }
 }
