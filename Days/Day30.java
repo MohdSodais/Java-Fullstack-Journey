@@ -7,9 +7,9 @@ public class Day30 {
         Scanner scanner = new Scanner(System.in);
 
         // Parallel arrays linking item names, prices, and stock quantities
-        String[] items = {"Cola", "Chips", "Chocolate Bar", "Bottled Water", "Energy Drink"};
-        double[] prices = {1.50, 1.25, 1.75, 1.00, 2.50};
-        int[] stock = {5, 3, 4, 6, 2};
+        String[] items = {"Cola", "Chips", "Chocolate Bar", "Bottled Water", "Energy Drink", "Pepsi"};
+        double[] prices = {1.50, 1.25, 1.75, 1.00, 2.50, 1.49};
+        int[] stock = {5, 3, 4, 6, 2, 5};
 
         boolean running = true;
         System.out.println("=== JAVA VENDING MACHINE ===");
