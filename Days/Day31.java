@@ -7,11 +7,11 @@ public class Day31 {
         Scanner scanner = new Scanner(System.in);
 
         // Parallel arrays representing hotel rooms
-        int[] roomNumbers = {101, 102, 201, 202, 301};
-        String[] roomTypes = {"Standard", "Standard", "Deluxe", "Deluxe", "Suite"};
-        double[] nightlyRates = {100.00, 100.00, 175.00, 175.00, 300.00};
-        boolean[] isOccupied = {false, true, false, false, false}; // Room 102 starts occupied
-        String[] guestNames = {"", "John Doe", "", "", ""};
+        int[] roomNumbers = {101, 102, 201, 202, 301, 302};
+        String[] roomTypes = {"Standard", "Standard", "Deluxe", "Deluxe", "Suite", "Standard"};
+        double[] nightlyRates = {100.00, 100.00, 175.00, 175.00, 300.00, 100.00};
+        boolean[] isOccupied = {false, true, false, false, false, true}; // Room 102 starts occupied
+        String[] guestNames = {"", "John Doe", "", "", "", "Alex"};
 
         boolean running = true;
         System.out.println("=== JAVA GRAND HOTEL RESERVATION SYSTEM ===");
